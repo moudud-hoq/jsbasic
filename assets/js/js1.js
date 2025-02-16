@@ -1,9 +1,11 @@
-let Age = 50;
-let name = "Tania";
-let address = "Dhaka";
-let country = "Bangladesh";
-let phone = "01700000000";
-let email = "tania98@gmial.com";
+a = 10;
+b = 20;
+y = 30;
 
-let details = `Name: ${name}, Age: ${Age}, Address: ${address}, Country: ${country}, Phone: ${phone}, Email: ${email}`;
+let c = a + b;
+let d = a - b;
 
+let e = b === a ? 'yes' : 'no';
+let f = b === d ? 'yes' : 'no';
+let g = b === c ? 'yes' : 'no';
+let h = c === y ? 'yes' : 'no';
