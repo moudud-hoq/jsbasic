@@ -1,7 +1,8 @@
-let A = 10;
-let B = 20;
-let C = A + B;
+let Age = 50;
+let name = "Tania";
+let address = "Dhaka";
+let country = "Bangladesh";
+let phone = "01700000000";
+let email = "tania98@gmial.com";
 
-alert(A);
-alert(B);
-alert(C);
+let details = `Name: ${name}, Age: ${Age}, Address: ${address}, Country: ${country}, Phone: ${phone}, Email: ${email}`;
