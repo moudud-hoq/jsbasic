@@ -1,8 +1,25 @@
-let a = 10;
-let b = 20;
-
-if (a == b) {
-    alert('this is od')
-} else {
-    alert('this is even')
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
 }
+
+document.getElementById("demo").innerHTML = "Today is " + day;
+document.getElementById("demo").innerHTML = "Student Name is" + day;
