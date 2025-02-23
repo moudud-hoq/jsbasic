@@ -13,15 +13,16 @@
 
     <script>
         jQuery(document).ready(function () {
-            $("button").on("click", function () {
-                console.log("Button is clicked");
+            $("button, p, h1").click(function () {
+                $(this).hide("slow");
+
             });
         })
     </script>
 
     <h1>Dev With Rasel Bhai</h1>
-    <p id="demo"></p>
-    <p id="student"></p>
+    <p id="demo">Hi</p>
+    <p id="student">By</p>
 
     <button>Click Me</button>
 
