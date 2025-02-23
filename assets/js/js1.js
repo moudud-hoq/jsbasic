@@ -17,6 +17,9 @@ let details = [
     linkedin = 'https://www.linkedin.com/in/johndoe'
 ]
 
+details.push('Hello World');
+details.pop(details[16]);
+
 console.log(details);
 console.log(details[12.1])
 

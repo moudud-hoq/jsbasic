@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev With Rasel Bhai</title>
+
+    <script src="/assets/js/jQuery.min.js"></script>
 </head>
+
 <body>
+
+    <script>
+        jQuery(document).ready(function () {
+            $("button").on("click", function () {
+                console.log("Button is clicked");
+            });
+        })
+    </script>
+
     <h1>Dev With Rasel Bhai</h1>
     <p id="demo"></p>
     <p id="student"></p>
-    
-    <script src="/assets/js/js1.js"></script>
+
+    <button>Click Me</button>
+
 </body>
+
 </html>
