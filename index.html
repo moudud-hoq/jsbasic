@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/14.css">
     <title>Dev With Rasel Bhai</title>
 
     <script src="/assets/js/jQuery.min.js"></script>
@@ -12,20 +13,62 @@
 <body>
 
     <script>
-        jQuery(document).ready(function () {
-            $("button, p, h1").click(function () {
-                $(this).hide("slow");
-
+        $(document).ready(function () {
+            // Show box1
+            $("#showBtn").click(function () {
+                $("#box1").show("slow");
             });
-        })
+
+            // Hide box1
+            $("#hideBtn").click(function () {
+                $("#box1").hide("fast");
+            });
+
+            // Toggle box2
+            $("#toggleBtn").click(function () {
+                $("#box2").toggle(1000);
+            });
+
+            // Fade In box3
+            $("#fadeInBtn").click(function () {
+                $("#box3").fadeIn(1500);
+            });
+
+            // Fade Out box3
+            $("#fadeOutBtn").click(function () {
+                $("#box3").fadeOut(1500);
+            });
+
+            // Slide Down box1
+            $("#slideDownBtn").click(function () {
+                $("#box1").slideDown("slow");
+            });
+
+            // Slide Up box1
+            $("#slideUpBtn").click(function () {
+                $("#box1").slideUp("fast");
+            });
+
+            // Slide Toggle box2
+            $("#slideToggleBtn").click(function () {
+                $("#box2").slideToggle(1000);
+            });
+        });
     </script>
 
-    <h1>Dev With Rasel Bhai</h1>
-    <p id="demo">Hi</p>
-    <p id="student">By</p>
+    <h1>jQuery মেথডসমূহের সম্মিলিত ব্যবহার</h1>
+    <button id="showBtn">দেখাও (Show)</button>
+    <button id="hideBtn">লুকাও (Hide)</button>
+    <button id="toggleBtn">টগল (Toggle)</button>
+    <button id="fadeInBtn">ফেড ইন (Fade In)</button>
+    <button id="fadeOutBtn">ফেড আউট (Fade Out)</button>
+    <button id="slideDownBtn">স্লাইড ডাউন (Slide Down)</button>
+    <button id="slideUpBtn">স্লাইড আপ (Slide Up)</button>
+    <button id="slideToggleBtn">স্লাইড টগল (Slide Toggle)</button>
 
-    <button>Click Me</button>
-
+    <div id="box1" class="box">এটি বক্স ১</div>
+    <div id="box2" class="box">এটি বক্স ২</div>
+    <div id="box3" class="box">এটি বক্স ৩</div>
 </body>
 
 </html>
