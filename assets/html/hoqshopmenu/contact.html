@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        h3 {
+            margin-top: 20px;
+        }
+        .section {
+            padding: 40px 0;
+        }
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .card h4 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .card p {
+            font-size: 0.9em;
+            color: #777;
+        }
+        .btn {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Learn more about our mission, vision, and team.</p>
+
+        <!-- Mission Section -->
+        <div class="section" id="mission">
+            <h3>Our Mission</h3>
+            <p>Our mission is to provide innovative and sustainable solutions that empower businesses and individuals to achieve their goals effectively.</p>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="section" id="vision">
+            <h3>Our Vision</h3>
+            <p>We envision a future where technology and creativity combine seamlessly to bring about positive change in industries and communities worldwide.</p>
+        </div>
+
+        <!-- Values Section -->
+        <div class="section" id="values">
+            <h3>Our Core Values</h3>
+            <div class="cards">
+                <div class="card">
+                    <img src="integrity-icon.png" alt="Integrity">
+                    <h4>Integrity</h4>
+                    <p>We believe in honesty, transparency, and ethical behavior in all our dealings.</p>
+                </div>
+                <div class="card">
+                    <img src="innovation-icon.png" alt="Innovation">
+                    <h4>Innovation</h4>
+                    <p>We strive to bring fresh ideas and creative solutions to every challenge.</p>
+                </div>
+                <div class="card">
+                    <img src="customer-icon.png" alt="Customer-Centric">
+                    <h4>Customer-Centric</h4>
+                    <p>Our customers are at the heart of everything we do, and we are committed to exceeding their expectations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="section" id="team">
+            <h3>Meet Our Team</h3>
+            <div class="cards">
+                <div class="card">
+                    <img src="team-member1.jpg" alt="John Doe">
+                    <h4>John Doe</h4>
+                    <p>CEO & Founder</p>
+                    <p>John is the visionary behind our company, driving innovation and growth.</p>
+                </div>
+                <div class="card">
+                    <img src="team-member2.jpg" alt="Jane Smith">
+                    <h4>Jane Smith</h4>
+                    <p>CTO</p>
+                    <p>Jane leads our tech team and ensures we remain at the cutting edge of technology.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Button -->
+        <a href="contact.html" class="btn">Get in Touch</a>
+    </div>
+</body>
+</html>
