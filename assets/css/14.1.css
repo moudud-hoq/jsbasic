@@ -6,7 +6,9 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #333;
+    background-image: url('https://scontent.fdac20-1.fna.fbcdn.net/v/t39.30808-6/475797839_9755602714457853_4483625152940490837_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=2285d6&_nc_eui2=AeG323zjcZkgJ5dW04wQaasDFgJfIvIu2nUWAl8i8i7adZmrvOHn_ET2PyxFrb8Ik1qaZN9nvPI0yKei3hIr3ceA&_nc_ohc=zHX-G8Bkh78Q7kNvgHmSA0X&_nc_oc=AdhUpYj7S9nJwNZoBzZXOI1GfLMlYNu-gscPZRYiuTCAni9sPkgjrl7bUnYrPmQKMfo&_nc_zt=23&_nc_ht=scontent.fdac20-1.fna&_nc_gid=A8UN817o_vJDf7C_YnEeF3g&oh=00_AYCyxqX6YvtTe9dNya-jwmerL_RQxbJbCb34UwkaVTBvmA&oe=67C5159F');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {

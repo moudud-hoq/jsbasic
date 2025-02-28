@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/assets/js/jQuery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tabslet@1.7.3/jquery.tabslet.min.js"></script>
     <link rel="stylesheet" href="/assets/css/14.1.css">
     <title>Hoqshop</title>
 </head>
@@ -19,8 +20,13 @@
                 let tabName = $(this).data("info");
                 $(`#${tabName}`).show("info");
             });
-        })
 
+            $('.tab-list').tabslet({
+                mouseevent: 'hover',
+                attribute: 'data-info',
+                animation: false
+            });
+        })
     </script>
 
 
@@ -40,6 +46,8 @@
                     photos and videos, and stay updated with the latest news and trends. It was founded by Mark
                     Zuckerberg in 2004 and has since grown to become one of the largest social networks in the world.
                     Facebook offers various features such as groups, events, and marketplace, making it a versatile
+                    platform for both personal and professional use. <br>Facebook offers various features such as
+                    groups, events, and marketplace, making it a versatile
                     platform for both personal and professional use.</p>
             </div>
             <div id="tab-2" class="tab-content">

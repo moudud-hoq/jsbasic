@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnific Popup</title>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/magnific.css">
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+</head>
+
+<body>
+    <h1>Hello</h1>
+
+    <div class="parent-container">
+        <a href="https://cdn-icons-png.flaticon.com/512/9313/9313320.png" class="m-popup">Open Image</a>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG93xCM8_u_79MI2m_islil7abYRJemvyv0g&s"
+            class="m-popup">Open Image</a>
+        <a href="https://media.istockphoto.com/id/1408777849/photo/gold-letter-f.jpg?s=612x612&w=0&k=20&c=EedwnmLOeDK7TEgGfAyJ2zgDkd2GUAK8kQCP5l5W030="
+            class="m-popup">Open Image</a>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.m-popup').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+                image: {
+                    titleSrc: function (item) {
+                        return item.el.attr('title'); // Image-এর title attribute থেকে ক্যাপশন নেবে
+                    }
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
