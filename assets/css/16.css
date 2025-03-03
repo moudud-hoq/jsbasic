@@ -32,28 +32,7 @@ img {
     height: auto;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    background-color: #ddd;
-}
 
-ul li {
-    padding: 10px;
-    cursor: pointer;
-}
-
-ul li.active {
-    background-color: gold;
-}
-
-.tab-content-wrapper .tab-content {
-    display: none;
-}
-
-.tab-content-wrapper .tab-content:first-child {
-    display: block;
-}
 
 
 .single-slide-item {
@@ -97,7 +76,7 @@ ul li.active {
     font-weight: 600;
 }
 
-.btn a{
+.btn a {
     color: white;
 }
 
@@ -105,3 +84,38 @@ ul li.active {
     background-color: #040c9e;
     text-decoration: none;
 }
+
+/* SLider Next and Prev button position */
+.prev-button {
+    left: -120px;
+}
+
+.next-button {
+    right: -120px;
+}
+
+
+.prev-button, .next-button {
+
+
+    background: linear-gradient(45deg, #0f1cf6, #040c9e);
+    border: none;
+    color: #fff;
+    padding: 15px 44px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.prev-button:hover, .next-button:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+} */

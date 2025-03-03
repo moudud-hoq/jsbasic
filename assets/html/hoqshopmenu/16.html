@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Slick Carousel CSS file-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,34 +23,46 @@
         <h2>Slider</h2>
         <script>
             jQuery(document).ready(function () {
-                $(".slider").slick();
+                $(".slider").slick({
+                    prevArrow: '<button class="prev-button"><</button>',
+                    nextArrow: '<button class="next-button">></button>',
+                });
+
             });
         </script>
 
         <div class="slider">
-            <div class="single-slide-item">
-                <h1>Slide 01</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat natus aspernatur dolore corporis
-                    voluptatem accusantium fugiat dicta nulla blanditiis maxime!
-                </p>
-                <a href="" class="btn">Learn More</a>
+            <div class="single-slider-item-wrapper">
+                <div class="single-slide-item">
+                    <h1>Slide 01</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat natus aspernatur dolore
+                        corporis
+                        voluptatem accusantium fugiat dicta nulla blanditiis maxime!
+                    </p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="single-slider-item-wrapper">
+                <div class="single-slide-item">
+                    <h1>Slide 02</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat natus aspernatur dolore
+                        corporis
+                        voluptatem accusantium fugiat dicta nulla blanditiis maxime!
+                    </p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="single-slider-item-wrapper">
+                <div class="single-slide-item">
+                    <h1>Slide 03</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat natus aspernatur dolore
+                        corporis
+                        voluptatem accusantium fugiat dicta nulla blanditiis maxime!
+                    </p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
             </div>
 
-            <div class="single-slide-item">
-                <h1>Slide 02</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat natus aspernatur dolore corporis
-                    voluptatem accusantium fugiat dicta nulla blanditiis maxime!
-                </p>
-                <a href="" class="btn">Learn More</a>
-            </div>
-
-            <div class="single-slide-item">
-                <h1>Slide 03</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat natus aspernatur dolore corporis
-                    voluptatem accusantium fugiat dicta nulla blanditiis maxime!
-                </p>
-                <a href="" class="btn">Learn More</a>
-            </div>
         </div>
     </div>
 
